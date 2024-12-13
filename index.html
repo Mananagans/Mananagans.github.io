@@ -2,12 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Services</title>
-    <!-- Link to external CSS stylesheet -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Include external JavaScript file -->
-    <script src="script.js" defer></script>
 </head>
 <body>
     <!-- Header section -->
@@ -18,15 +13,15 @@
 
     <!-- Navigation bar -->
     <nav>
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="about.html">About Us</a>
-        <a href="contact.html">Contact</a>
+        <a href="#index">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
         <a href="history.html">History of the Internet</a>
     </nav>
 
-    <!-- Hero section -->
-    <div id="hero">
+    <!-- Slogan section -->
+    <div id="slogan">
         <h1>Innovative Tech Solutions</h1>
         <p>Empowering your business with technology</p>
     </div>
@@ -56,32 +51,12 @@
         <p>We are a team of tech enthusiasts dedicated to providing the best technology solutions to help businesses thrive in the digital age.</p>
     </section>
 
-    <!-- Contact section with form -->
+    <!-- Contact section -->
     <section id="contact">
         <h2>Contact Us</h2>
-        <form action="/submit" method="GET">
-            <!-- Name input -->
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <!-- Email input -->
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <!-- Phone input -->
-            <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
-
-            <!-- Message input -->
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <!-- Submit button -->
-            <button type="submit">Submit</button>
-        </form>
-        <p>Email: info@techservices.com</p>
-        <p>Phone: +1 234 567 890</p>
-        <p>Address: 123 Tech Street, Silicon Valley, CA</p>
+        <p>Email us directly: <a href="mailto:John.Doe@gmail.com">John.Doe@gmail.com</a></p>
+		<p>Call us: <a href="tel:+1234567899">+1 (123) 456-7899</a></p>
+		<p>Find us here: <a href="https://www.google.com/maps?q=42+Imaginary+Way,+Nowhereville,+ZZ" target="_blank">42 Imaginary Way, Nowhereville, ZZ</a></p>
     </section>
 
     <!-- Footer section -->
