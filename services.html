@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Our Services</title>
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Include external JavaScript file -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <h1>Our Services</h1>
+        <p>Discover how we can help your business succeed.</p>
+        <button id="dark-mode-toggle">Toggle Dark Mode</button>
+    </header>
+
+    <!-- Navigation bar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html" class="active">Services</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="history.html">History of the Internet</a>
+    </nav>
+
+    <!-- Services section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service">
+            <img src="https://cdn-icons-png.flaticon.com/512/11096/11096817.png" alt="Web Development Icon">
+            <h3>Web Development</h3>
+            <p>We create custom websites tailored to your business needs. Our web development services include responsive design, e-commerce integration, and user-friendly interfaces. Whether you need a simple site or a complex platform, we ensure it’s optimized for performance and usability.</p>
+            <button onclick="location.href='contact.html'">Learn More</button>
+        </div>
+        <div class="service">
+            <img src="https://cdn-icons-png.flaticon.com/512/8420/8420247.png" alt="IT Support Icon">
+            <h3>IT Support</h3>
+            <p>Our team provides 24/7 technical support for all your IT challenges. From troubleshooting to system optimization, we ensure your business runs smoothly. We specialize in network management, hardware installation, and software maintenance.</p>
+            <button onclick="location.href='contact.html'">Learn More</button>
+        </div>
+        <div class="service">
+            <img src="https://cdn-icons-png.flaticon.com/512/2345/2345612.png" alt="Cloud Solutions Icon">
+            <h3>Cloud Solutions</h3>
+            <p>We offer scalable and secure cloud computing services to optimize your business operations. Our solutions include cloud migration, data backup, and virtual environments tailored to your specific needs. Improve collaboration and reduce IT costs with our expert cloud services.</p>
+            <button onclick="location.href='contact.html'">Learn More</button>
+        </div>
+    </section>
+
+    <!-- Testimonials section -->
+    <section id="testimonials">
+        <h2>What Our Clients Say</h2>
+        <blockquote>
+            <p>"Tech Services transformed our website and boosted our online presence! Their web development team is top-notch."</p>
+            <footer>- Jane Doe, CEO of ABC Corp</footer>
+        </blockquote>
+        <blockquote>
+            <p>"Their IT support team is incredibly reliable. Whenever we face an issue, they resolve it quickly and professionally."</p>
+            <footer>- John Smith, Operations Manager</footer>
+        </blockquote>
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2024 Tech Services. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Ensure dark mode compatibility
+        const toggleDarkMode = () => {
+            document.body.classList.toggle('dark-mode');
+        };
+
+        const darkModeButton = document.getElementById('dark-mode-toggle');
+        if (darkModeButton) {
+            darkModeButton.addEventListener('click', toggleDarkMode);
+        }
+    </script>
+</body>
+</html>

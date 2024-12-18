@@ -1,0 +1,550 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background: #007BFF;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1rem;
+    margin: 0.5rem 0 0;
+}
+
+/* Navigation Bar */
+nav {
+    background: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #007BFF;
+}
+
+/* Slogan Section */
+#slogan {
+    background: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+#slogan h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+#slogan p {
+    margin: 0.5rem 0 0;
+    font-size: 1.2rem;
+}
+
+/* Content Sections */
+section {
+    padding: 2rem 1rem;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+section h2 {
+    color: #007BFF;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+/* Services Section */
+#services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 1rem;
+}
+
+#services .service {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1.5rem;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+#services .service img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+#services .service h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #007BFF;
+}
+
+#services .service p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+#services .service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Dark Mode for Services */
+body.dark-mode #services .service {
+    background-color: #333;
+    color: #eaeaea;
+    border: 1px solid #555;
+    box-shadow: none;
+}
+
+body.dark-mode #services .service h3 {
+    color: #1e90ff;
+}
+
+/* Testimonials Section */
+#testimonials {
+    padding: 2rem 1rem;
+    background: #f9f9f9;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+#testimonials h2 {
+    margin-bottom: 1rem;
+}
+
+#testimonials blockquote {
+    font-style: italic;
+    margin: 1rem auto;
+    max-width: 600px;
+    color: #555;
+}
+
+#testimonials footer {
+    margin-top: 0.5rem;
+    color: #007BFF;
+}
+
+/* Dark Mode for Testimonials */
+body.dark-mode #testimonials {
+    background: #202020;
+    color: #fff;
+}
+
+body.dark-mode #testimonials blockquote {
+    color: #fff;
+}
+
+body.dark-mode #testimonials footer {
+    color: #1e90ff;
+}
+
+/* Contact Section */
+#contact a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+/* Contact Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form textarea, form button {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #181818; /* Dark background */
+    color: #eaeaea; /* Light grey text for better readability */
+}
+
+header.dark-mode, nav.dark-mode, footer.dark-mode {
+    background-color: #202020; /* Slightly lighter dark background for contrast */
+    color: #eaeaea; /* Ensure text in header, nav, and footer is light */
+}
+
+nav.dark-mode a {
+    color: #eaeaea; /* Ensure navigation links are readable */
+}
+
+nav.dark-mode a:hover {
+    color: #1e90ff; /* Vibrant blue hover color */
+}
+
+footer.dark-mode {
+    color: #eaeaea;
+}
+
+/* Buttons in dark mode */
+button.dark-mode {
+    background-color: #1e90ff; /* Bright button color for visibility */
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.dark-mode:hover {
+    background-color: #0056b3; /* Darker hover effect */
+}
+
+/* Explicitly set text inside boxes to remain white in dark mode */
+body.dark-mode div, body.dark-mode section div, body.dark-mode h3, body.dark-mode p {
+    color: #fff; /* Force text inside these elements to stay white */
+}
+
+/* Ensure "About Me" text is white in dark mode */
+body.dark-mode #about p {
+    color: #ffffff; /* Force text in "About Me" section to be white */
+}
+
+/* Ensure Contact Us labels are white in dark mode */
+body.dark-mode #contact p {
+    color: #ffffff; /* Make "Email us directly:", "Call us:", and "Find us here:" white */
+}
+
+/* Ensure "History of the Internet" section works in dark mode */
+body.dark-mode #history, body.dark-mode #history p {
+    color: #ffffff !important; /* Force text in the History section to be white */
+}
+
+/* Ensure all sections and headings work in dark mode */
+body.dark-mode section, body.dark-mode section h2 {
+    color: #007BFF !important; /* Keep headings blue in dark mode */
+}
+
+/* Dark Mode Styles for Form */
+body.dark-mode form {
+    background-color: #333;
+    border: 1px solid #555;
+    color: #eaeaea;
+}
+
+body.dark-mode form input, 
+body.dark-mode form textarea {
+    background-color: #444;
+    color: #eaeaea;
+    border: 1px solid #666;
+}
+
+body.dark-mode form button {
+    background-color: #1e90ff;
+    color: #ffffff;
+}
+
+body.dark-mode form button:hover {
+    background-color: #0056b3;
+}
+
+/* Dark Mode for Highlights Section */
+body.dark-mode #highlights {
+    background-color: #2e2e2e;
+    color: #eaeaea;
+}
+
+body.dark-mode #highlights h3 {
+    color: #1e90ff;
+}
+
+body.dark-mode #highlights p {
+    color: #eaeaea;
+}
+#hero {
+            background: url('https://www.freewebheaders.com/wp-content/gallery/high-tech-hero-headers/cache/blue-neon-light-circles-circuit-board-design-hi-tech-hero-header.jpg-nggid044791-ngg0dyn-1920x1080x100-00f0w010c010r110f110r010t010.jpg') no-repeat center center;
+            background-size: cover; /* Ensure the image stretches proportionally to fill the container */
+            color: #fff;
+            text-align: center;
+            padding: 6rem 1rem; /* Keep the desired height */
+            position: relative;
+            width: 100%; /* Ensure the section spans the full width of the viewport */
+        }
+
+        #hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        #hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+        }
+
+        #hero button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        #hero button:hover {
+            background-color: #0056b3;
+        }
+
+        #highlights {
+            background-color: #f4f4f4;
+            padding: 2rem 1rem;
+            position: relative;
+        }
+
+        #highlights h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            color: #333;
+        }
+
+        .highlight {
+            text-align: center;
+            margin: 1rem auto;
+            max-width: 300px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .highlight:nth-child(1) {
+            top: 0;
+            left: 10%;
+            z-index: 2;
+        }
+
+        .highlight:nth-child(2) {
+            top: 60px;
+            left: 45%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+
+        .highlight:nth-child(3) {
+            top: 120px;
+            right: 10%;
+            z-index: 0;
+        }
+
+        .highlight:hover {
+            z-index: 3;
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .highlight:nth-child(2):hover {
+            transform: translateX(-50%) !important; /* Prevent shifting */
+        }
+
+        .highlight h3 {
+            color: #007BFF;
+            margin-bottom: 0.5rem;
+        }
+
+        .highlight p {
+            font-size: 1rem;
+        }
+
+        .highlight-container {
+            position: relative;
+            height: 300px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        /* Dark Mode Styles */
+        body.dark-mode .highlight {
+            background-color: #2e2e2e;
+            border: 1px solid #444;
+            color: #eaeaea;
+        }
+
+        body.dark-mode .highlight h3 {
+            color: #1e90ff;
+        }
+		
+		.service {
+            text-align: center;
+            padding: 1.5rem;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+            background-color: #f9f9f9;
+            transition: transform 0.3s, box-shadow 0.3s;
+            animation: fadeInScale 1s ease-in-out;
+            animation-fill-mode: both;
+        }
+
+        /* Keyframes for fade-in and scale animation */
+        @keyframes fadeInScale {
+            0% {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* Stagger the animations for a cascading effect */
+        .service:nth-child(1) {
+            animation-delay: 0.3s;
+        }
+        .service:nth-child(2) {
+            animation-delay: 0.6s;
+        }
+        .service:nth-child(3) {
+            animation-delay: 0.9s;
+        }
+
+        .service img {
+            max-width: 100px;
+            margin: 0 auto 1rem;
+            display: block;
+        }
+
+        .service h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #007BFF;
+        }
+
+        .service p {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+
+        .service button {
+            padding: 0.5rem 1rem;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .service button:hover {
+            background-color: #0056b3;
+        }
+
+        #services {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 2rem 1rem;
+        }
+
+        #services h2 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            width: 100%;
+        }
+
+        .service:hover {
+            transform: scale(1.05); /* Slightly enlarge the hovered box */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Dark Mode Styles */
+        body.dark-mode .service {
+            background-color: #2e2e2e;
+            border: 1px solid #444;
+            color: #eaeaea;
+        }
+
+        body.dark-mode .service h3 {
+            color: #1e90ff;
+        }
+
+        body.dark-mode .service button {
+            background-color: #1e90ff;
+        }
+
+        body.dark-mode .service button:hover {
+            background-color: #0056b3;
+        }
